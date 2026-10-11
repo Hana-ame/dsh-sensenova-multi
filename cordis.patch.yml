@@ -1,0 +1,10 @@
+# dsh-sensenova-multi bundle patch.
+#
+# One insert line mounts the Host half; the inject field declares the services
+# the plugin reads. Only `llm` is named — everything else is reached through
+# ctx.get() so a headless composition degrades a feature rather than failing.
+- insert:
+    - id: sensenova-multi
+      name: 'dsh-sensenova-multi'
+      inject: ['llm']
+      config: {}

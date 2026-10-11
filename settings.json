@@ -1,0 +1,13 @@
+{
+  "endpoint": "https://token.sensenova.cn",
+  "path": "/v1/chat/completions",
+  "keys": [
+    "sk-REPLACE-WITH-YOUR-KEY"
+  ],
+  "timeoutMs": 120000,
+  "cooldownMs": 60000,
+  "maxRetries": 2,
+  "listen": false,
+  "defaultModel": "senseNova-6.8-flash-lite",
+  "defaultMaxTokens": 8192
+}

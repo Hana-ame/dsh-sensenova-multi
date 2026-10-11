@@ -1,0 +1,46 @@
+{
+  "name": "dsh-sensenova-multi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "SenseNova multi-key provider for DSH: registers sensenova and sensenova-multi routes with automatic API key rotation — 429/401/403 failures switch to the next key in the pool, with round-robin cooldown and per-key failure tracking.",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./src/adapter": "./src/adapter.js",
+    "./src/keys": "./src/keys.js",
+    "./src/errors": "./src/errors.js",
+    "./src/catalog": "./src/catalog.js",
+    "./src/settings": "./src/settings.js",
+    "./src/upstream": "./src/upstream.js",
+    "./src/stream": "./src/stream.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "test:keys": "node --test test/keys.test.js",
+    "test:adapter": "node --test test/adapter.test.js"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "sensenova",
+    "llm-provider",
+    "multi-key",
+    "key-rotation",
+    "fallback"
+  ],
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-llm": "^0.1.2-rc.1 || ^0.1.7-rc.2 || ^0.2.0-rc.1"
+  }
+}
