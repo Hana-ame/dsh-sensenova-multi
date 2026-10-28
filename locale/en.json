@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SenseNova Multi-Key",
+    "description": "SenseNova multi-key provider: registers sensenova and sensenova-multi routes with automatic key rotation — 429/401/403 switch to the next key in the pool, with round-robin cooldown and per-key failure tracking."
+  }
+}

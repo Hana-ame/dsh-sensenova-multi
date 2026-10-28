@@ -14,7 +14,8 @@
     "./src/catalog": "./src/catalog.js",
     "./src/settings": "./src/settings.js",
     "./src/upstream": "./src/upstream.js",
-    "./src/stream": "./src/stream.js"
+    "./src/stream": "./src/stream.js",
+    "./locale/*.json": "./locale/*.json"
   },
   "scripts": {
     "test": "node --test test/*.test.js",

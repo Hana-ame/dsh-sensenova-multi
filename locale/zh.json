@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "SenseNova 多 Key",
+    "description": "SenseNova 多 Key provider：注册 sensenova 与 sensenova-multi 路由并自动换 Key——遇 429/401/403 切到池中下一个 Key，带轮询冷却与 per-key 失败计数。"
+  }
+}
